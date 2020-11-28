@@ -1,5 +1,5 @@
 {
-  "name": "roockscissor-paper",
+  "name": "tictactoe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vuex": "^3.6.0"
   },
   "devDependencies": {
     "css-loader": "^3.0.0",
