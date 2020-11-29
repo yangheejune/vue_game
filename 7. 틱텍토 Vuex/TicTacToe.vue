@@ -1,11 +1,11 @@
 <template>
     <div>
         <div>{{turn}}님의 턴입니다.</div>
-        <table-component>
+        <table>
             <tr v-for="(rowData, rowIndex) in tableData" :key="rowIndex">
                 <td @click="onClickTd(rowIndex, cellIndex)" v-for="(cellData, cellIndex) in rowData" :key="cellIndex">{{cellData}}</td>
             </tr>
-        </table-component>
+        </table>
         <div v-if="winner">{{winner}}님의 승리!</div>
     </div>
 </template>
@@ -72,13 +72,12 @@
 <style>
     table {
         border-collapse: collapse;
-        text-align: center;
     }
     td {
         border: 1px solid black;
         width: 40px;
         height: 40px;
-        
+        text-align: center;
     }
 
 </style>
